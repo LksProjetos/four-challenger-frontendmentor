@@ -5,10 +5,16 @@ body {
     justify-content: center;
     height: 100vh;
     font-family: "Montserrat", serif;
+    font-size: 14px;
 }
+
 main {
     height: 500px;
     width: 300px;
+}
+
+:root {
+    --color--lime: hsl(75, 94%, 57%);
 }
 
 .container {
@@ -24,6 +30,7 @@ main {
     width: 90px;
     height: 60%;
     border-radius: 90px 90px;
+    color: hsl(0, 0%, 100%);
 }
 
 .textos {
@@ -41,14 +48,12 @@ main {
 .cidade {
     font-size: 14px;
     margin-bottom: 10px;
-    color: hsl(75, 94%, 57%);
+    color: var(--color--lime);
 }
 
 .informacao {
     font-size: 12px;
     margin-bottom: 15px;
-    color: hsl(0, 0%, 100%);    
-    
     color: hsla(0, 0%, 100%, 0.712);
 }
 
@@ -58,80 +63,43 @@ main {
     gap: 10px;
 }
 
-.github {
-    border-bottom-style: initial;
+.link {
     width: 250px;
     height: 40px;
     background-color: hsl(0, 0%, 20%);
     color: hsl(0, 0%, 100%);
     border-radius: 8px 8px;
     cursor: pointer;
-    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.frontendmentor {
-    border-bottom-style: initial;
-    width: 250px;
-    height: 40px;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    border-radius: 8px 8px;
-    cursor: pointer;
-}
-
-.linkedin {
-    border-bottom-style: initial;
-    width: 250px;
-    height: 40px;
-    background-color: hsl(0, 0%, 20%);
-    color: hsl(0, 0%, 100%);
-    border-radius: 8px 8px;
-    cursor: pointer;
-}
-
-.twitter {
-    border-bottom-style: initial;
-    width: 250px;
-    height: 40px;
-    background-color: hsla(0, 2%, 10%, 0.774);
-    color: hsl(0, 0%, 100%);
-    border-radius: 8px 8px;
-    cursor: pointer;
-    text-decoration: line-through;
-    color: hsl(0, 2%, 50%);
-}
-
-.instagram {
-    border-bottom-style: initial;
-    width: 250px;
-    height: 40px;
-    background-color: hsla(0, 2%, 10%, 0.774);
-    color: hsl(0, 0%, 100%);
-    border-radius: 8px 8px;
-    cursor: pointer;
-    text-decoration: line-through;
-    color: hsl(0, 2%, 50%);
-}
-
-.redes .twitter:hover {
-    transform: 0.5s;
-    background-color: hsla(150, 2%, 24%, 0.082); 
-    color: hsl(0, 2%, 50%);
-    cursor: unset;
-}
-
-.redes .instagram:hover {
-    transform: 0.5s;
-    background-color: hsla(150, 2%, 24%, 0.082); 
-    color: hsl(0, 2%, 50%);
-    cursor: unset;
-}
-
-.redes button:hover {
+.link:hover {
     transform: 1.0s; 
-    background-color: hsl(75, 94%, 57%); 
+    background-color: var(--color--lime); 
     color:hsl(0, 0%, 12%);
     font-weight: 700;
     font-size: 14px;
 }
 
+.link--disabled {
+    width: 250px;
+    height: 40px;
+    background-color: hsla(0, 2%, 10%, 0.774);
+    color: hsl(0, 0%, 100%);
+    border-radius: 8px 8px;
+    cursor: pointer;
+    text-decoration: line-through;
+    color: hsl(0, 2%, 50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link--disabled:hover {
+    transform: 0.5s;
+    background-color: hsla(150, 2%, 24%, 0.082); 
+    color: hsl(0, 2%, 50%);
+    cursor: default;
+}

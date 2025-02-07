@@ -16,26 +16,25 @@
     <link
     href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-
 </head>
 
 <body>
     <main class="container">
-        <a>
-            <img src="./src/imagens/avatar-lucas.jpg" alt="Ícone de Perfil">
+        <a href="#" aria-label="Link para meu perfil">
+            <img src="./src/imagens/avatar-lucas.jpg" aria-label="Imagem do meu perfil" alt="Ímagem do Perfil" >
         </a>
-        <div class="textos">
+        <header class="textos">
             <h1 class="nome">Lucas Silva</h1>
             <p class="cidade">Rio de Janeiro</p>
             <p class="informacao">"Iniciante na Área de Desenvolvedor Front-End</p>
-        </div>
-        <div class="redes">
-            <a href="https://github.com/LksProjetos" target="_blank"><button class="github">GitHub</button></a>
-            <a href="https://www.frontendmentor.io/profile/LksProjetos" target="_blank"><button class="frontendmentor">Frontend Mentor</button></a>
-            <a href="https://www.linkedin.com/in/lucas-da-silva-de-moraes-408864336/" target="_blank"><button class="linkedin">Linkedin</button></a>
-            <a><button class="twitter">Twitter - Desativado!</button></a>
-            <a><button class="instagram">Instagram - Desativado!</button></a>
-        </div>
+        </header>
+        <ul class="redes">
+            <li><a href="https://github.com/LksProjetos" target="_blank" class="link">GitHub</a></li>
+            <li><a href="https://www.frontendmentor.io/profile/LksProjetos" target="_blank" class="link">Front-End Mentor</a></li>
+            <li><a href="https://www.linkedin.com/in/lucas-da-silva-de-moraes-408864336/" target="_blank" class="link">Linkedin</a></li>
+            <li><a href="#" class="link--disabled">Twitter - Desativado!</a></li>
+            <li><a href="#" class="link--disabled">Instagram - Desativado!</a></li>
+        </ul>
     </main>
 </body>
 
